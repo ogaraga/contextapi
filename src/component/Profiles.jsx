@@ -1,7 +1,7 @@
 import { useContext} from "react";
 import UserContext from "../context/UserContext";
 import Login from "./Login";
-import Modal from './modal';
+import Modal from './Modal';
 function Profiles() {
   
 
