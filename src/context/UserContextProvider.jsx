@@ -17,4 +17,4 @@ UserContextProvider.propTypes = {
   children: PropTypes.object,
 };
 
-export default UserContextProvider;
+export default UserContextProvider

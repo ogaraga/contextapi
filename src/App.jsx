@@ -1,7 +1,7 @@
 import Login from './component/Login'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Profile from './component/Profiles'
+import Profile from './component/Profiles';
 function App() {
 
   return (
