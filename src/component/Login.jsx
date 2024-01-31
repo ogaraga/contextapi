@@ -12,32 +12,32 @@ function Login() {
   const [error, setError] = useState(true);
 
   const arr = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "O",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
+    "Az",
+    "By",
+    "Cx",
+    "Dw",
+    "Ev",
+    "Fu",
+    "Gt",
+    "Hs",
+    "Ir",
+    "Jq",
+    "Kp",
+    "Lo",
+    "Mn",
+    "Nm",
+    "Ol",
+    "Pk",
+    "Qj",
+    "Ri",
+    "Sh",
+    "Tg",
+    "Uf",
+    "Ve",
+    "Wd",
+    "Xc",
+    "Yb",
+    "Za",
   ];
   const randNum = Math.floor(Math.random() * arr.length + 1);
   const Id = arr[randNum];
@@ -54,7 +54,7 @@ function Login() {
       return (!error);
     }else{
         setError(error)
-        return error
+        
     }
   };
   const handleE = () => {
@@ -63,16 +63,16 @@ function Login() {
       return (!error);
     }else{
         setError(error)
-        return error
+        
     }
   };
   const handleP = () => {
     if (password.trim() !== "") {
       setError(!error);
-      return (!error);
+     
     }else{
         setError(error)
-        return error
+        
     }
   };
 
