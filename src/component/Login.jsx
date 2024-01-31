@@ -49,31 +49,22 @@ function Login() {
   const navigate = useNavigate();
 
   const handleU = () => {
-    if (userName.trim() !== "") {
+    if (userName.trim() !== "") 
       setError(!error);
-      return (!error);
-    }else{
-        setError(error)
-        
-    }
+    //   return (!error);
+    
   };
   const handleE = () => {
-    if (email.trim() !== "") {
+    if (email.trim() !== "") 
       setError(!error);
-      return (!error);
-    }else{
-        setError(error)
-        
-    }
+    //   return (!error);
+    
   };
   const handleP = () => {
-    if (password.trim() !== "") {
+    if (password.trim() !== "") 
       setError(!error);
      
-    }else{
-        setError(error)
-        
-    }
+    
   };
 
   const handleSubmit = (e) => {
@@ -99,9 +90,9 @@ function Login() {
             onChange={(e) => setUserName(e.target.value)}
             style={{ padding: "10px", width: "300px", margin: "10px" }}
           required/>
-          {error ? (
+          {error && (
             <p style={{ color: "red" }}>Username is required!</p>
-          ) : null}
+          )}
         </div>
         <div>
           <label htmlFor="Email">Email: </label>
@@ -113,7 +104,7 @@ function Login() {
             onChange={(e) => setEmail(e.target.value)}
             style={{ padding: "10px", width: "300px", margin: "10px" }}
           required/>
-          {error ? <p style={{ color: "red" }}>Email is required!</p> : null}
+          {error && <p style={{ color: "red" }}>Email is required!</p>}
         </div>
         <div>
           <label htmlFor="password">Password: </label>
@@ -126,7 +117,7 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
             style={{ padding: "10px", width: "300px", margin: "10px" }}
           required/>
-          {error ? <p style={{ color: "red" }}>Password is required!</p> : null}
+          {error && <p style={{ color: "red" }}>Password is required!</p>}
         </div>
         <button
           type="submit"
