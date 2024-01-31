@@ -9,7 +9,7 @@ function Profiles() {
   const handleLogOut =()=>{
       
     return(
-    <div style={{zIndex: 3}}>
+    <div style={{zIndex: 3, opacity: 0.5}}>
       {setModal(<Modal/>)} 
     </div>)
   }
